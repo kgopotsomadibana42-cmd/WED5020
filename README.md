@@ -149,6 +149,28 @@ The website will be developed using basic web development technologies.
 - **JavaScript:** May be used for interactive features in future development.
 
 The website files will be organised into different folders to make the project easier to manage.
+
+## Changelog
+- Added button for product and gallery.
+- Fixed navigation for product HTml
+- Removed tables
+- Added a video
+- Added more comments
+
+- Added full styling(' style.css') for all 5 pages
+- Responsive product grid - articles now display horizontally using flexbox
+- Hover effects on navigation links, product cards, and section
+- Custom color scheme
+- Form styling with focus states and rounded buttons
+- Mobile breakpoints at 768px and 480px
+- Navigation bar background updated to improve contrast
+- Section cards now have subtle shadow and lift-on-hover effects
+- Improved readability on smaller screens
+- Improved image Optimisation and changed width and height of banner in products page
+
+
+
+
 # References
 
 W3Schools (2026) *HTML Tutorial*. Available at: https://www.w3schools.com/html/ (Accessed: 6 August 2026).
