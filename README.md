@@ -149,6 +149,15 @@ The website will be developed using basic web development technologies.
 - **JavaScript:** May be used for interactive features in future development.
 
 The website files will be organised into different folders to make the project easier to manage.
+# References
+
+W3Schools (2026) *HTML Tutorial*. Available at: https://www.w3schools.com/html/ (Accessed: 6 August 2026).
+
+W3Schools (2026) *HTML Video*. Available at: https://www.w3schools.com/html/html5_video.asp (Accessed: 5 August 2026).
+
+MDN Web Docs (2026) *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 6 August 2026).
+
+MDN Web Docs (2026) *The Video Embed Element*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video (Accessed: 14 August 2026).
 
 ## File Structure
 Madibana-Family-Bakery/
