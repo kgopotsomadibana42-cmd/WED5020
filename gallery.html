@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madibana Family Bakery - Gallery</title>
+     <link rel = "stylesheet" href="css/style.css">
+        
 </head>
 
 <body>
@@ -29,7 +31,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="product.html">Products</a>
-            <a href="gallery.html">Gallery</a>
+            <a href="gallery.html" class="active">Gallery</a>
             <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         
@@ -40,361 +42,347 @@
        <!------------- Main ------------->
 
     <main>
+              
         <h2>Gallery</h2>
         <p>Welcome to the Madibana Family Bakery gallery page. Here you can find a collection of images showcasing our delicious baked products and our bakery's warm and inviting atmosphere.</p>
 
         <!-- Gallery Images -->
+         <h1>Our Baked Products</h1S>
+
         <section>
-            <h3>Our Baked Products</h3>
+
             <!-- SCONES -->
+            <h2>Our Scones</h2>
 
-        <h2>Our Scones</h2>
+            <!---flex-wrapper-->
+            <div class="gallery-flex-wrapper">
 
-<table border="1">
+                <!-- Plain Scone -->
+                <div class="gallery-card">
 
-    <tr>
-        <th>Image</th>
-        <th>Type of Scone</th>
-        <th>Flavour</th>
-        <th>Description</th>
-        <th>Price</th>
-    </tr>
+                    <img src="images/Scones.jpeg"
+                        alt="Plain Scone"
+                        width="300"
+                        height="300">
+                
 
-    <!-- Plain Scone -->
-    <tr>
-        <td>
-            <img src="images/Scones.jpeg"
-                 alt="Plain Scone"
-                 width="300"
-                 height="300">
-        </td>
+                    <h3>Plain Scone</h3>
+                    <p>classic</p>
+                    <p>Soft and freshly baked traditional scone.</p>
+                    <p><strong>Price: R12</strong> each</p>
 
-        <td>Plain Scone</td>
-        <td>Classic</td>
-        <td>Soft and freshly baked traditional scone.</td>
-        <td>R12 each</td>
-    </tr>
+                 </div>
+               
+                <!-- Cheese Scone -->
+                <div class="gallery-card">
 
-    <!-- Cheese Scone -->
-    <tr>
-        <td>
-            <img src="images/Cheese scones.webp"
-                 alt="Cheese Scone"
-                 width="300"
-                 height="300">
-        </td>
+                    <img src="images/Cheese scones.webp"
+                        alt="Cheese Scone"
+                        width="300">
 
-        <td>Cheese Scone</td>
-        <td>Cheese</td>
-        <td>Savoury scone made with delicious cheese.</td>
-        <td>R15 each</td>
-    </tr>
+                    <h3>Cheese Scone</h3>
+                    <p>Cheese</p>
+                    <p>Soft scone made with delicious cheese.</p>
+                    <p><strong>Price: R15</strong> each</p>
+            
+                 </div>
 
-    <!-- Raisin Scone -->
-    <tr>
-        <td>
-            <img src="images/Raisin scones.jpg"
-                 alt="Raisin Scone"
-                 width="300"
-                 height="300">
-        </td>
+                <!-- Raisin Scone -->
+                <div class="gallery-card">
+                
+                    <img src="images/Raisin scones.jpg"
+                        alt="Raisin Scone"
+                        width="300"
+                        height="300">
 
-        <td>Raisin Scone</td>
-        <td>Raisin</td>
-        <td>Sweet and soft scone filled with raisins.</td>
-        <td>R15 each</td>
-    </tr>
+                    <h3>Raisin Scone</h3>
+                    <p>Raisin</p>
+                    <p>Sweet and soft scone filled with raisins.</p>
+                    <p><strong>Price: R15</strong> each</p>
+                </div>
 
-   
+            </div>
 
-    
+        </section>
 
-</table>
-<br>
+        <br>
          
-            <!-- 
-     COOKIES
-      -->
-
-<h2>Our Cookies</h2>
-
-<table border="1">
-
-    <tr>
-        <th>Image</th>
-        <th>Type of Cookie</th>
-        <th>Flavour</th>
-        <th>Description</th>
-        <th>Price</th>
-    </tr>
-
-    <!-- Chocolate Chip Cookie -->
-    <tr>
-        <td>
-            <img src="images/chocolate cookies.webp"
-                 alt="Chocolate Chip Cookie"
-                 width="300"
-                 height="300">
-        </td>
-
-        <td>Chocolate Chip Cookie</td>
-        <td>Chocolate</td>
-        <td>Crispy cookie filled with delicious chocolate chips.</td>
-        <td>R50 per packet</td>
-    </tr>
-
-    <!-- Oatmeal Cookie -->
-    <tr>
-        <td>
-            <img src="images/Oatmeal cookies.webp"
-                 alt="Oatmeal Cookie"
-                 width="300"
-                 height="300"
-        </td>
-
-        <td>Oatmeal Cookie</td>
-        <td>Oats</td>
-        <td>Tasty homemade cookie made with wholesome oats.</td>
-        <td>R45 per packet</td>
-    </tr>
-
-   
-
-   
-
-    <!-- Ginger Cookie -->
-    <tr>
-        <td>
-            <img src="images/Ginger cookie.webp"
-                 alt="Ginger Cookie"
-                 width="300"
-                 height="300">
-        </td>
-
-        <td>Ginger Cookie</td>
-        <td>Ginger</td>
-        <td>Crunchy cookie with a warm and spicy ginger flavour.</td>
-        <td>R45 per packet</td>
-    </tr>
-
-    
-
-   
-
-</table>
-              <!-- 
-             CAKES
-              -->
+            <!-- COOKIES-->
         <section>
+        <h2>Our Cookies</h2>
+           <div class="gallery-flex-wrapper">
+
+            <!-- Chocolate Chip Cookie -->
+            <div class="gallery-card">
+                
+                <img src="images/chocolate cookies.webp"
+                    alt="Chocolate Chip Cookie"
+                    width="300"
+                    height="300">
+        
+
+                <h3>Chocolate Chip Cookie</h3>
+                <p>Chocolate</p>
+                <p>Crispy cookie filled with delicious chocolate chips.</p>
+                <p><strong>Price: R50</strong> per packet</p>
+
+            </div>
+
+             <!-- Oatmeal Cookie -->
+    
+            <div class="gallery-card">
+                <img src="images/Oatmeal cookies.webp"
+                    alt="Oatmeal Cookie"
+                    width="300"
+                    height="300">
+            
+            
+
+            
+
+                <h3>Oatmeal Cookie</h3>
+                <p>Oats</p>
+                <p>Tasty homemade cookie made with wholesome oats.</p>
+                <p><strong>Price: R45</strong> per packet</p>
+        
+            </div>
+
+   
+
+            <!-- Ginger Cookie -->
+            <div class="gallery-card">
+                <img src="images/Ginger cookie.webp"
+                    alt="Ginger Cookie"
+                    width="300"
+                    height="300">
+                
+
+                
+                    <h3>Ginger Cookie</h3>
+                    <p>Ginger</p>
+                    <p>Crunchy cookie with a warm and spicy ginger flavour.</p>
+                    <p><strong>Price: R45</strong> per packet</p>
+                
+            </div>
+        </div>
+        </section>
+              <!-- CAKES-->
+        <section >
 
             <h2>Our Cakes</h2>
 
-            <table border="1">
-
-                <tr>
-                    <th>Image</th>
-                    <th>Cake</th>
-                    <th>Flavour</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                </tr>
-
+            
+            <div class="gallery-flex-wrapper">
                 <!-- Chocolate Cake -->
-                <tr>
-
-                    <td>
-                        <img src="images/chocolate cake.webp"
-                             alt="Chocolate Cake"
-                             width="300"
+                <div class="gallery-card">
+                    <img src="images/chocolate cake.webp"
+                         alt="Chocolate Cake"
+                         width="300"
                                 height="300">
-                    </td>
+                    
+                
 
-                    <td>Chocolate Cake</td>
+                    <h3>Chocolate Cake</h3>
 
-                    <td>Chocolate</td>
+                    <p><strong>Chocolate</strong></p>
 
-                    <td>
+                    <p>
                         Rich and soft chocolate cake
                         with chocolate icing.
-                    </td>
+                    </p>
 
-                    <td>From R350</td>
+                    <p><strong>From : R350</strong></p>
 
-                </tr>
+                </div>
+                
 
 
                 <!-- Vanilla Cake -->
-                <tr>
-
-                    <td>
+                
+             
+                <div class="gallery-card">
+                    
                         <img src="images/Vanilla Cake.webp"
                              alt="Vanilla Cake"
                              width="300"
                                 height="300">
-                    </td>
+                    
 
-                    <td>Vanilla Cake</td>
+                    <h3>Vanilla Cake</h3>
 
-                    <td>Vanilla</td>
+                    <p>Vanilla</p>
 
-                    <td>
+                    <p>
                         Soft vanilla cake with
                         creamy vanilla icing.
-                    </td>
+                    </p>
 
-                    <td>From R300</td>
-
-                </tr>
+                    <p><strong>From : R300</strong></p>
+                
+                </div>
 
 
                 <!-- Red Velvet Cake -->
-                <tr>
+                <div class="gallery-card">
 
-                    <td>
+                    
                         <img src="images/Red velvet cake.webp"
                              alt="Red Velvet Cake"
                              width="300"
                                 height="300">
-                    </td>
+                    
+                    
+                    
+            
+                        <h3>Red Velvet Cake</h3>
+                    
 
-                    <td>Red Velvet Cake</td>
+                    
+                        <p>Red Velvet</p>
+                    
 
-                    <td>Red Velvet</td>
+                    
+                        <p>Moist red velvet cake
+                        with cream cheese icing.</p>
+                    
 
-                    <td>
-                        Moist red velvet cake
-                        with cream cheese icing.
-                    </td>
-
-                    <td>From R400</td>
-
-                </tr>
+    
+                        <p><strong>From : R400</strong></p>
+                    
+                    
+                </div>
+                
 
 
                 <!-- Carrot Cake -->
-                <tr>
+                <div class="gallery-card">
+                    <img src="images/carrot cake.webp"
+                         alt="Carrot Cake"
+                         width="300"
+                            height="300">
 
-                    <td>
-                        <img src="images/carrot cake.webp"
-                             alt="Carrot Cake"
-                             width="300"
-                                height="300">
-                    </td>
+                    <h3>Carrot Cake</h3>
 
-                    <td>Carrot Cake</td>
+                    <p>Carrot and Cinnamon</p>
 
-                    <td>Carrot and Cinnamon</td>
-
-                    <td>
+                    <p>
                         Homemade carrot cake
                         with a creamy topping.
-                    </td>
+                    </p>
 
-                    <td>From R380</td>
+                    <p><strong>From : R380</strong></p>
+                    
+                </div>
 
-                </tr>
-
-
+            </div>
               
-            </table>
+        
 
         </section>
 
 
         <br>
+        <section>
           <h2>Types of Cakes</h2>
 
-<table border="1">
 
-    <tr>
-        <th>Image</th>
-        <th>Type of Cake</th>
-        <th>Flavour</th>
-        <th>Suitable For</th>
-        <th>Price</th>
-    </tr>
+          <div class="gallery-flex-wrapper">
+            <!-- Birthday Cake -->
+            
 
-    <tr>
-        <td>
+    
+        <div class="gallery-card">
             <img src="images/Birthday Cake.jpeg"
                  alt="Birthday Cake"
                  width="300"
                     height="300">
-        </td>
-        <td>Birthday Cake</td>
-        <td>Chocolate</td>
-        <td>Birthday Celebrations</td>
-        <td>From R350</td>
-    </tr>
+        
+        
+        <h3>Birthday Cake</h3>
+        <p>Chocolate</p>
+        <p>Birthday Celebrations</p>
+        <p>From : R350</p>
+        </div>
 
-    <tr>
-        <td>
+
+    <div class="gallery-card">
+        
             <img src="images/wedding cake.enc"
                  alt="Wedding Cake"
                  width="300"
                     height="300">
-        </td>
-        <td>Wedding Cake</td>
-        <td>Vanilla</td>
-        <td>Weddings</td>
-        <td>From R800</td>
-    </tr>
+        
+        
+        <h3>Wedding Cake</h3>
+        <p>Vanilla</p>
+        <p>Weddings</p>
+        <p>From : R800</p>
+        </div>
+    
 
-    <tr>
-        <td>
+    
+        <div class="gallery-card">
             <img src="images/Graduation cake.enc"
                  alt="Graduation Cake"
                  width="300"
                     height="300">
-        </td>
-        <td>Graduation Cake</td>
-        <td>Red Velvet</td>
-        <td>Graduation Parties</td>
-        <td>From R450</td>
-    </tr>
+        
+        
+        <h3>Graduation Cake</h3>
+        <p>Red Velvet</p>
+        <p>Graduation Parties</p>
+        <p><strong>From : R450</strong></p>
+        </div>
+    
 
-    <tr>
-        <td>
-            <img src="images/"
+
+        <div class="gallery-card">
+            <img src="images/Baby shower cake.enc"
                  alt="Baby Shower Cake"
                  width="300"
                     height="300">
-        </td>
-        <td>Baby Shower Cake</td>
-        <td>Vanilla and Strawberry</td>
-        <td>Baby Showers</td>
-        <td>From R400</td>
-    </tr>
-
+        
+        <h3>Baby Shower Cake</h3>
+        <p>Vanilla and Strawberry</p>
+        <p>Baby Showers</p>
+        <p><strong>From : R400</strong></p>
+    </div>
+    <br>
     
-    <tr>
-        <td>
+    <div class="gallery-card">
+        
             <img src="images/Retirement cake.jgp"
                  alt="Retirement Cake"
                  width="300"
                     height="300">
-        </td>
-        <td>Retirement Cake</td>
-        <td>Lemon</td>
-        <td>Retirement Parties</td>
-        <td>From R400</td>
-    </tr>
+        
+        
+        <h3>Retirement Cake</h3>
+        <p>Lemon</p>
+        <p>Retirement Parties</p>
+        <p><strong>From : R400</strong></p>
+        
+    </div>
+    <br>
 
-    <tr>
-        <td>
+    
+        <div class="gallery-card">
             <img src="images/christmas cake .jgp"
                  alt="Christmas Cake"
                  width="300"
                     height="300">
-        </td>
-        <td>Christmas Cake</td>
-        <td>Fruit Cake</td>
-        <td>Christmas Celebrations</td>
-        <td>From R350</td>
-    </tr>
+        
+        
+        <h3>Christmas Cake</h3>
+        <p>Fruit Cake</p>
+        <p>Christmas Celebrations</p>
+        <p><strong>From : R350</strong></p>
+        </div>
+          </div>
+    
+        </section>
 
-</table>
-<br>
+
 
         <!-- 
              PASTRIES
@@ -403,99 +391,92 @@
 
             <h2>Our Pastries</h2>
 
-            <table border="1">
-
-                <tr>
-
-                    <th>Image</th>
-
-                    <th>Pastry</th>
-
-                    <th>Flavour</th>
-
-                    <th>Description</th>
-
-                    <th>Price</th>
-
-                </tr>
-
+          <div class="gallery-flex-wrapper">
 
                 <!-- Croissant -->
-                <tr>
+                <div class="gallery-card">
 
-                    <td>
+                    
                         <img src="images/croissants.webp"
                              alt="Croissant"
                              width="300"
                              height="300">
-                    </td>
+                    
 
-                    <td>Croissant</td>
+                    
+                        <h3>Croissant</h3>
+                
 
-                    <td>Butter</td>
+                    <p>Butter</p>
 
-                    <td>
+                    <p>
                         Light and flaky
                         traditional pastry.
-                    </td>
+                    </p >
 
-                    <td>R20 each</td>
+                    <p><strong>R20 each</strong></p>
 
-                </tr>
+                </div>
+                
 
 
                 <!-- Chocolate Croissant -->
-                <tr>
+                
 
-                    <td>
+                    <div class="gallery-card">
                             <img src="images/chocolate croissant.jpeg"
                              alt="Chocolate Croissant"
                              width="300"
                              height="300">
 
-                    </td>
+                    
 
-                    <td>Chocolate Croissant</td>
+                    
+                        <h3>Chocolate Croissant</h3>
+                    
 
-                    <td>Chocolate</td>
+                    <p>Chocolate</p>
 
-                    <td>
+                    <p>
                         Flaky pastry filled
                         with chocolate.
-                    </td>
+                    </p>
 
-                    <td>R25 each</td>
+                    <p><strong>R25 each</strong></p>
 
-                </tr>
+                </div>
+                
 
 
                 <!-- Cinnamon Roll -->
-                <tr>
+                
 
-                    <td>
+                    <div class="gallery-card">
                         <img src="images/cinnamon rolls.webp"
                              alt="Cinnamon Roll"
                              width="300"
                              height="300">
 
-                    </td>
+                    
 
-                    <td>Cinnamon Roll</td>
+                    
+                        <h3>Cinnamon Roll</h3>
+                    
 
-                    <td>Cinnamon</td>
+                    <p>Cinnamon</p>
 
-                    <td>
+                    <p>
                         Soft pastry with cinnamon
                         and sweet icing.
-                    </td>
+                    </p>
 
-                    <td>R20 each</td>
+                    <p><strong>Price: R20 </strong> each</p>
 
-                </tr>
+                </div>
 
 
                
-            </table>
+          </div>
 
         </section>
 
@@ -506,123 +487,120 @@
         <!-- 
              BREAD
               -->
-        <section>
+        <section >
 
             <h2>Our Fresh Bread</h2>
 
-            <table border="1">
-
-                <tr>
-
-                    <th>Image</th>
-
-                    <th>Bread</th>
-
-                    <th>Type</th>
-
-                    <th>Description</th>
-
-                    <th>Price</th>
-
-                </tr>
-
+          <div class="gallery-flex-wrapper">
 
                 <!-- White Bread -->
-                <tr>
+                <div class="gallery-card">
 
-                    <td>
+                    
                         <img src="images/white bread.jgp.webp"
                              alt="White Bread"
                              width="300"
                              height="300">
-                    </td>
+                    
+                    
+                        <h3>White Bread</h3>
+                    
 
-                    <td>White Bread</td>
+                    <p>Classic White</p>
 
-                    <td>Classic White</td>
-
-                    <td>
+                    <p>
                         Soft and fresh
                         everyday bread.
-                    </td>
+                    </p>
 
-                    <td>R18 per loaf</td>
+                    <p><strong>Price: R18 per loaf</strong></p>
 
-                </tr>
+                </div>
 
 
                 <!-- Brown Bread -->
-                <tr>
+                <div class="gallery-card">
 
-                    <td>
+                    
                         <img src="images/Brown bread .jgp.jpg"
                              alt="Brown Bread"
                              width="300"
                              height="300">
-                    </td>
+                    
 
-                    <td>Brown Bread</td>
+                
+                        <h3>Brown Bread</h3>
+                    
 
-                    <td>Whole Wheat</td>
+                    <p>Whole Wheat</p>
 
-                    <td>
+                    <p>
                         Healthy and filling
                         whole wheat bread.
-                    </td>
+                    </p>
 
-                    <td>R20 per loaf</td>
+                    <p><strong>Price: R20 per loaf</strong></p>
 
-                </tr>
+                </div>
 
 
                 <!-- Garlic Bread -->
-                <tr>
+                <div class="gallery-card">
 
-                    <td>
+                    
                         <img src="images/Garlic Bread.jgp.webp"
                              alt="Garlic Bread"
                              width="300"
                              height="300">
-                    </td>
+                    
 
-                    <td>Garlic Bread</td>
+                    
+                        <h3>Garlic Bread</h3>
+                    
 
-                    <td>Garlic and Herbs</td>
+                    
+                        <p>Garlic and Herbs</p>
+                    
 
-                    <td>
-                        Fresh bread with
-                        garlic and herbs.
-                    </td>
+                
+                        <p>Fresh bread with
+                        garlic and herbs.</p>
+                    
 
-                    <td>R25 each</td>
+                
+                        <p><strong>Price: R25 each</strong></p>
+                    </div>
 
-                </tr>
+                
 
 
                 <!-- Cheese Bread -->
-                <tr>
+                <div class="gallery-card">
 
-                    <td>
+                    
+                    
+
+                    
                         <img src="images/Cheese Bread .jgp.webp"
                              alt="Cheese Bread"
                              width="300"
                              height="300">
-                    </td>
+                
 
-                    <td>Cheese Bread</td>
+                    <h3>Cheese Bread</h3>
 
-                    <td>Cheese</td>
+                    <p>Cheese</p>
 
-                    <td>
+                    <p>
                         Soft bread filled
                         with delicious cheese.
-                    </td>
+                    </p>
 
-                    <td>R30 each</td>
+                    <p><strong>Price: R30 each</strong></p>
 
-                </tr>
+                </div>
 
-            </table>
+            </div>
 
         </section>
 
@@ -636,72 +614,64 @@
         <section>
 
             <h2>Our Muffins</h2>
-
-            <table border="1">
-
-                <tr>
-
-                    <th>Image</th>
-
-                    <th>Muffin</th>
-
-                    <th>Flavour</th>
-
-                    <th>Description</th>
-
-                    <th>Price</th>
-
-                </tr>
+             <div class="gallery-flex-wrapper">
+           
 
 
                 <!-- Chocolate Muffin -->
-                <tr>
+                <div class="gallery-card">
 
-                    <td>
+                
                         <img src="images/chocolate muffin.webp"
                              alt="Chocolate Muffin"
                              width="300"
                              height="300">
-                    </td>
+                    
 
-                    <td>Chocolate Muffin</td>
+                    <h3>Chocolate Muffin</h3>
 
-                    <td>Chocolate</td>
+                    <p>Chocolate</p>
 
-                    <td>
+                    <p>
                         Soft chocolate muffin
                         with chocolate pieces.
-                    </td>
+                    </p>
 
-                    <td>R18 each</td>
+                    <p>R18 each</p>
 
-                </tr>
+                </div>
 
 
                 <!-- Blueberry Muffin -->
-                <tr>
+                <div class="gallery-card">
 
-                    <td>
+                    
                         <img src="images/Blueberry muffin.webp"
                              alt="Blueberry Muffin"
                              width="300"
                              height="300">
-                    </td>
+                    
 
-                    <td>Blueberry Muffin</td>
+                    
+                        <h3>Blueberry Muffin</h3>
+                    
 
-                    <td>Blueberry</td>
+                    
+                        <p>Blueberry</p>
+                    
 
-                    <td>
-                        Soft muffin filled
-                        with blueberries.
-                    </td>
+                
+                        <p>
+                            Soft muffin filled
+                            with blueberries.
+                        </p>    
+                    
 
-                    <td>R20 each</td>
+                    <p><strong>Price: R20 each</strong></p>
 
-                </tr>
+                </div>
 
-            </table>
+             </div>
 
         </section>
 
@@ -712,73 +682,58 @@
         <!-- 
              CUPCAKES
               -->
-        <section>
+        <section >
 
             <h2>Our Cupcakes</h2>
 
-            <table border="1">
+           <div class="gallery-flex-wrapper">
 
-                <tr>
+                <div class="gallery-card">
 
-                    <th>Image</th>
-
-                    <th>Cupcake</th>
-
-                    <th>Flavour</th>
-
-                    <th>Description</th>
-
-                    <th>Price</th>
-
-                </tr>
-
-
-                <tr>
-
-                    <td>
+                
                         <img src="images/chocolate muffin.webp"
                              alt="Chocolate Cupcakes"
                              width="300"
                              height="300">
-                    </td>
+                    
 
-                    <td>Chocolate Cupcakes</td>
+                    <h3>Chocolate Cupcakes</h3>
 
-                    <td>Chocolate</td>
+                    <p>Chocolate</p>
 
-                    <td>
+                    <p>
                         Soft chocolate cupcakes
                         with creamy icing.
-                    </td>
+                    </p>
 
-                    <td>R15 each</td>
+                    <p><strong>Price: R15 each</strong></p>
 
-                </tr>
+                </div>
+                <br>
 
-
-                <tr>
-
-                    <td>
+                
+                       <div class="gallery-card">
+                    
                         <img src="images/Vanilla Cake.webp"
                              alt="Vanilla Cupcakes"
                              width="300"
                              height="300">
-                    </td>
+                    
 
-                    <td>Vanilla Cupcakes</td>
+                    <h3>Vanilla Cupcakes</h3>
 
-                    <td>Vanilla</td>
+                    <p>Vanilla</p>
 
-                    <td>
+                    <p>
                         Classic vanilla cupcakes
                         with sweet icing.
-                    </td>
+                    </p>
 
-                    <td>R15 each</td>
+                    <p><strong>Price: R15 each</strong></p>
 
-                </tr>
+                </div>
 
-            </table>
+           </div>
 
         </section>
 
@@ -787,9 +742,11 @@
 
 
 
-
+    </div>
 
     </main>
+
+    <a href="enquiry.html"><button>Enquiry</button></a>
     
      <!-----   FOOTER   ------>
 
