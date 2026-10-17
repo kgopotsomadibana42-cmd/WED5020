@@ -80,9 +80,46 @@ Displays the different baked products including bread, cakes, cupcakes, muffins,
  Forms allow customers to enter information and send enquiries.
 - **Responsive Design**
  The website will use responsive design techniques so that the pages can adapt to desktop, tablet and mobile screen sizes.
+
+## 4. Timeline and Milestones
+
+The project is developed in stages to make it easier to plan and complete.
+
+| Milestone | Description | Status |
+|-----------|-------------|--------|
+| Milestone 1 | Plan the bakery website and identify its purpose | Completed |
+| Milestone 2 | Create the HTML pages | Completed |
+| Milestone 3 | Add bakery information and product details | Completed |
+| Milestone 4 | Create and apply the external CSS stylesheet | Completed |
+| Milestone 5 | Add images and develop the gallery page | Completed |
+| Milestone 6 | Check navigation links and page layouts | In progress |
+| Milestone 7 | Update the README.md file | Completed |
+| Milestone 8 | Test the website and prepare the submission | Pending |
+
+## 5. Part 1 Details
+
+Part 1 focuses on creating the basic structure and content of the
+Madibana Family Bakery website.
+
+The work includes:
+
+- Creating the HTML pages for the website.
+- Adding headings, paragraphs, and bakery information.
+- Creating navigation links between the pages.
+- Displaying bakery products and their prices.
+- Adding images to the gallery.
+- Creating an external CSS file to style the website.
+- Improving the layout and appearance of the pages.
+
+The website files are organised into folders to make the project easier
+to manage.
+
+The CSS stylesheet is stored in the `css` folder, while the images are
+stored in the `images` folder.
+
   
 
-# 4. Website Structure
+# 6. Website Structure
 
 ## Sitemap
 
@@ -129,7 +166,7 @@ The website will contain the following main pages:
   - Opening Hours
   - Contact form
 
-# 5. Design and User Experience
+# 7. Design and User Experience
 
 ## Colour Scheme
 
@@ -162,7 +199,7 @@ Buttons and links will be clearly labelled so that users understand where they w
 
 The website will also be responsive designed to work well on different screen sizes.
 
-# 6. Technical Requirements
+# 8. Technical Requirements
 
 The website will be developed using basic web development technologies.
 
@@ -300,6 +337,8 @@ GitHub was used to manage project development.
 - Section cards now have subtle shadow and lift-on-hover effects.
 - Improved readability on smaller screens
 - improved image Optimisation and changed width and height of banner in products page.
+- updated the README.md file.
+  
 
 # References
 
