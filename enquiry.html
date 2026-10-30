@@ -6,6 +6,8 @@
     <title>Enquiry - Madibana Family Bakery</title>
     <!------External CSS------>
      <link rel = "stylesheet" href="css/style.css">
+     <script src="js/script.js"defer></script>
+     
 </head>
 
 <body>
@@ -54,7 +56,7 @@
 
         <!--  FORM  -->
 
-        <form>
+        <form id ="enquiryForm" action="novalidate>
            <h3>Personal Information</h3>
             <!-- First name -->
             <label for="firstname">
@@ -313,6 +315,7 @@
             <!-- Reset -->
             <input type="reset"
                    value="Clear Form">
+        <div id="enquiryFeedback" role="status" aria-live="polite"></div>
 
         </form>
 
@@ -326,6 +329,8 @@
     <a href="index.html"><button>Back to Home</button></a>
     <!-- Footer Section -->
     <footer>
+        <p>
+            <strong>Madibana Family Bakery</strong>
         <p>
             &copy; 2024 Madibana Family Bakery. All rights reserved.
         </p>    

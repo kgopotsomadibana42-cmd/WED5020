@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madibana Family Bakery</title>
+    <title>Madibana Family Bakery | Freshly Baked Goods in Bochum</title>
+    
+    <meta name="description" 
+    content="Welcome to Madibana Family Bakery  in Bochum , South Africa. Explore our fresh bread, cakes, cupcakes, and pastries.">
+
+    <meta name="keywords" 
+    content="Madibana Family Bakery, Bochum Bakery, Fresh Bread, Cakes, Cupcakes, Pastries, South Africa Bakery, Baked Goods, Local Bakery, Family-Owned Bakery">
+   
+    <meta name="author" content="Madibana Family Bakery">
+   
     <!------External CSS------>
      <link rel = "stylesheet" href="css/style.css">
+     <!------External JavaScript------>
+     <script src="js/script.js" defer></script>   
 </head>
 
 <body>
@@ -32,7 +43,8 @@
 
         
             <!-- Navigation links to different pages of the website -->
-            <a href="index.html">Home</a>
+             <nav aria-label="Main Navigation">
+            <a href="index.html" aria-current="page">Home</a>
             <a href="about.html">About Us</a>
             <a href="product.html">Products</a>
             <a href="gallery.html">Gallery</a>
@@ -96,24 +108,27 @@
                 <li>Muffins</li>
                 <li>Cookies</li>
                 <li>Pastries</li>
-                 <li>Scones</li>11
+                 <li>Scones</li>
 
             </ul>
 
            
+        
+        
         </section>
-        <a href="about.html"><button>About Us</button></a>
-            
+          <a href="about.html"><button>About Us</button></a> 
+    </main>
+     
+          
     <!-- Footer Section -->
     <footer>
         <p>
             <strong>Madibana Family Bakery</strong>
         </p>
 
-        <p> 
-            Freshly Baked with Love
-        </p>
-        <p>&copy; 2024 Madibana Family Bakery. All rights reserved.</p>
+        
+        <p>&copy; <span id="Year"></span>
+             Madibana Family Bakery. All rights reserved.</p>
     </footer>
 
       
