@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Madibana Family Bakery</title>
+    <title> Our Products and Prices | Madibana Family Bakery</title>
+    <meta name="descritption" content="Explore Madibana Family Bakery's delicious
+    selection of fresh bread, birthday cakes, cupcakes, muffins, cookies, pastries and scones.">
     <!------External CSS------>
      <link rel = "stylesheet" href="css/style.css">
      <script src="js/script.js" defer></script>
@@ -22,8 +24,8 @@
          <!--logo-->
          <img src="images/bakery logo.jpg" 
          alt="Bakery Logo"
-          width="400" 
-          height="400">
+          width="150" 
+          height="150">
         <!--slogan for the bakery-->
         <p><strong>Baked with love</strong></p>
 
@@ -34,7 +36,7 @@
             <!-- Navigation links to different pages of the website -->
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="product.html" >Products</a>
+            <a href="product.html" aria-current="page">Products</a>
             <a href="gallery.html">Gallery</a>
             <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
@@ -93,8 +95,8 @@
             <p>Our cupcakes are suitable for parties, celebrations, and everyday treats.
                  We offer a variety of flavors and designs to choose from.</p>
             <p>
-                <strong>Price: From R15 each</strong>
-                <strong>Price: From R120 per dozen</strong>
+                <strong>Price: R15 each</strong>
+                <strong>Price: R120 per dozen</strong>
             </p>
             
         </section>
@@ -108,24 +110,34 @@
             <p>We provide fresh bread everyday family meals including :</p>
             <ul>
                 <!-- Unordered List of bakery products -->
-                <li>White Bread</li>
+                <li>White Bread
+                    <br>
                   <!--product image-->
                   <img src="images/BREAD.webp"
                   alt="Bread"  
                     width="200"
-                    height="200"> 
-                <li>Whole Wheat Bread</li>
+                    height="200"
+                    loading = "lazy">
+                </li>
+                <li>Whole Wheat Bread
+                    <br>
                 <!--product image-->
                 <img src="images/Whole Wheat Bread (2).webp"
                 alt="Whole Wheat Bread"
                 width="200"
-                height="200">
-                <li>Specialty Breads</li>
+                height="200"
+                loading="lazy">
+                </li>
+                <li>Specialty Breads
+                    <br>
                 <!--product image-->
                 <img src="images/specialty breads.webp"
                 alt="Specialty Breads"
                 width="200"
-                height="200">
+                height="200"
+                loading="lazy">
+
+                </li>
             </ul>
             <p>
                 <strong>Price: From R18</strong>
@@ -270,7 +282,9 @@
         <p>
             <strong>Madibana Family Bakery</strong>
         </p>
-        <p>&copy; 2024 Madibana Family Bakery. All rights reserved.</p> 
+
+        <p>&copy; <span id = "year"> </span>
+             Madibana Family Bakery. All rights reserved.</p> 
     </footer>
 
 

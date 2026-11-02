@@ -1,11 +1,13 @@
 var CONFIG = {
-    businessEmail: "info@madibanafamilybakery.com",
 
-  
-    formEndpoint: "",
+    businessEmail: "kgopotsomadibana42@gmail.com",
+
+    formEndpoint: "https://formspree.io/f/xgaanged",
 
     address: "61 Blouberg Street, Bochum, South Africa",
+
     mapQuery: "61 Blouberg Street, Bochum, South Africa",
+
     timeZone: "Africa/Johannesburg"
 };
 
@@ -727,18 +729,18 @@ function addCharCounter(textarea, max) {
 function sendEmail(subject, fields) {
     if (CONFIG.formEndpoint) {
         var body = { _subject: subject };
-        Object.keys(fields).forEach(function (k) { body[k] = fields[k]; });
+        Object.keys(fields).forEach(function (key) { body[key] = fields[key]; });
         return fetch(CONFIG.formEndpoint, {
             method: "POST",
             headers: { "Content-Type": "application/json", "Accept": "application/json" },
             body: JSON.stringify(body)
-        }).then(function (r) {
-            if (!r.ok) throw new Error("Server responded with " + r.status);
+        }).then(function (response) {
+            if (!response.ok) throw new Error("Server responded with " + response.status);
             return "sent";
         });
     }
 
-    var lines = Object.keys(fields).map(function (k) { return k + ": " + fields[k]; });
+    var lines = Object.keys(fields).map(function (key) { return key + ": " + fields[key]; });
     window.location.href = "mailto:" + CONFIG.businessEmail +
         "?subject=" + encodeURIComponent(subject) +
         "&body=" + encodeURIComponent(lines.join("\n"));
@@ -979,6 +981,59 @@ function setupContactForm() {
 
         submitWithEmail(form, "Website message: " + v("subject"), fields, html);
     });
+    // Gallery Lightbox Functionality
+document.addEventListener("DOMContentLoaded", function () {
+
+    const galleryImages = document.querySelectorAll(".gallery-card img");
+
+    if (galleryImages.length === 0) return;
+
+    const lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+
+    lightbox.innerHTML = `
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <img src="" alt="Enlarged bakery product image">
+    `;
+
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = lightbox.querySelector("img");
+    const closeButton = lightbox.querySelector(".lightbox-close");
+
+    galleryImages.forEach(function (image) {
+
+        image.addEventListener("click", function () {
+
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+
+            lightbox.classList.add("active");
+        });
+
+    });
+
+    closeButton.addEventListener("click", function () {
+        lightbox.classList.remove("active");
+    });
+
+    lightbox.addEventListener("click", function (event) {
+
+        if (event.target === lightbox) {
+            lightbox.classList.remove("active");
+        }
+
+    });
+
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape") {
+            lightbox.classList.remove("active");
+        }
+
+    });
+
+});
 }
 
 

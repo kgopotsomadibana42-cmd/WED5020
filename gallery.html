@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madibana Family Bakery - Gallery</title>
+    <title> Bakery Gallery | Madibana Family Bakery</title>
+    <meta name="description" content="View the Madibana Family Bakery gallery
+    and dicover our freshly baked cakes, cupcakes, breads and other delicious treats.">
     <!------External CSS------>
      <link rel = "stylesheet" href="css/style.css">
+     <!----------External Java Script------->
      <script src="js/script.js" defer></script>   
      
         
@@ -22,8 +25,8 @@
          <!--logo-->
          <img src="images/bakery logo.jpg" 
          alt="Bakery Logo"
-          width="400" 
-          height="400">
+          width="150" 
+          height="150">
         <!--slogan for the bakery-->
         <p><strong>Baked with love</strong></p>
 
@@ -35,7 +38,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="product.html">Products</a>
-            <a href="gallery.html" class="active">Gallery</a>
+            <a href="gallery.html" aria-current="page">Gallery</a>
             <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         
@@ -358,7 +361,8 @@
             <img src="images/Retirement cake.jgp"
                  alt="Retirement Cake"
                  width="300"
-                    height="300">
+                    height="300"
+                    loading="lazy">
         
         
         <h3>Retirement Cake</h3>
@@ -695,10 +699,11 @@
                 <div class="gallery-card">
 
                 
-                        <img src="images/chocolate muffin.webp"
+                        <img src="images/Chocolate cupcake.webp"
                              alt="Chocolate Cupcakes"
                              width="300"
-                             height="300">
+                             height="300"
+                             loading="lazy">
                     
 
                     <h3>Chocolate Cupcakes</h3>
@@ -759,7 +764,8 @@
             <p>
                 <strong>Madibana Family Bakery</strong>
             </p>
-            <p>&copy; 2024 Madibana Family Bakery. All rights reserved.</p>
+            <p>&copy; <span id="year"></span>
+                Madibana Family Bakery. All rights reserved.</p>
 
 
 

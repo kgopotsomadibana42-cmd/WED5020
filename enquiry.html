@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry - Madibana Family Bakery</title>
+    <title>Place an Order |  Madibana Family Bakery</title>
+    <meta name="description" content="Send an enquiry or place an order with Madibana Family Bakery. Contact us about our products, prices and custom cakes.">
     <!------External CSS------>
      <link rel = "stylesheet" href="css/style.css">
-     <script src="js/script.js"defer></script>
+     <script src="js/script.js" defer></script>
      
 </head>
 
@@ -56,7 +57,7 @@
 
         <!--  FORM  -->
 
-        <form id ="enquiryForm" action="novalidate>
+        <form id="enquiryForm" novalidate>
            <h3>Personal Information</h3>
             <!-- First name -->
             <label for="firstname">
@@ -126,7 +127,7 @@
             <br>
 
             <select id="product"
-                    name="product">
+                    name="product" required>
 
                 <option value="">
                     Select a product
@@ -158,8 +159,9 @@
 
                  <option value="scones">
                         Scones
-                </option>   
+                </option> 
 
+              
             </select>
 
             <br><br>
@@ -175,7 +177,8 @@
             <input type="number"
                    id="quantity"
                    name="quantity"
-                   min="1">
+                   min="1"
+                   required>
 
             <br><br>
 
@@ -189,7 +192,8 @@
 
             <input type="date"
                    id="date"
-                   name="date">
+                   name="date"
+                   required>
 
             <br><br>
 
@@ -206,7 +210,8 @@
                 <input type="radio"
                        id="price"
                        name="enquirytype"
-                       value="price">
+                       value="price"
+                       required>
 
                 <label for="price">
                     Price Enquiry
@@ -332,7 +337,8 @@
         <p>
             <strong>Madibana Family Bakery</strong>
         <p>
-            &copy; 2024 Madibana Family Bakery. All rights reserved.
+            &copy; <span id="year"></span>
+             Madibana Family Bakery. All rights reserved.
         </p>    
     </footer>
 

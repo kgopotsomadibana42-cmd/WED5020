@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madibana Family Bakery - Contact Us</title>
+    <title>Contact Us | Madibana Family Bakery </title>
+    <meta name ="description" content="Contact Madibana Family Bakery for orders and enquiries. Find our contact details, opening hours and location in Bochum, South Africa.">
     <!------External CSS------>
     <link rel = "stylesheet" href="css/style.css">
+    <!---------External Java Scrit------>
     <script src="js/script.js" defer></script>
 </head>
 
@@ -20,22 +22,22 @@
          <!--logo-->
          <img src="images/bakery logo.jpg" 
          alt="Bakery Logo"
-          width="400" 
-          height="400">
+          width="150" 
+          height="150">
         <!--slogan for the bakery-->
         <p><strong>Baked with love</strong></p>
 
         <!-- Navigation Section -->
-    <nav>
          
             
             <!-- Navigation links to different pages of the website -->
+            <nav aria-label="Main Navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="product.html">Products</a>
             <a href="gallery.html">Gallery</a>
             <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         
     </nav>
     </header>
@@ -116,7 +118,7 @@
                 Complete the form below and send us your enquiry.
             </p>
 
-            <form>
+            <form id="contactForm" novalidate>
 
                 <!-- First name -->
                 <label for="firstname">
@@ -128,6 +130,7 @@
                 <input type="text"
                        id="firstname"
                        name="firstname"
+                       placeholder="Enter your first name"
                        required>
 
                 <br><br>
@@ -143,6 +146,7 @@
                 <input type="text"
                        id="surname"
                        name="surname"
+                       placeholder="Enter your surname"
                        required>
 
                 <br><br>
@@ -158,6 +162,7 @@
                 <input type="email"
                        id="email"
                        name="email"
+                       placeholder="Enter your email address"
                        required>
 
                 <br><br>
@@ -173,6 +178,7 @@
                 <input type="tel"
                        id="phone"
                        name="phone"
+                       placeholder="Enter your phone number"
                        required>
 
                 <br><br>
@@ -188,6 +194,7 @@
                 <input type="text"
                        id="subject"
                        name="subject"
+                       placeholder="Enter the subject"
                        required>
 
                 <br><br>
@@ -203,7 +210,6 @@
                 <textarea id="message"
                           name="message"
                           rows="8"
-                          cols="80"
                           placeholder="Write your message here..."
                           required></textarea>
 
@@ -214,7 +220,7 @@
                 <input type="submit" value="Submit">
 
                 <!-- Clear button -->
-                <input type="reset"value="Clear Form">
+                <input type="reset" value="Clear Form">
 
             </form>
 
@@ -245,7 +251,8 @@
             <strong>Madibana Family Bakery</strong>
         </p>
         <p>
-            &copy; 2024 Madibana Family Bakery. All rights reserved.
+            &copy; <span id="year">2026</span>
+            Madibana Family Bakery. All rights reserved.
         </p>
     </footer>
 </body>

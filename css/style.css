@@ -181,7 +181,7 @@ section {
     border-radius: 16px;
     margin-bottom: 28px;
     border: 1px solid #f0e4d8;
-    transition: background  0.2s, border-color 0.2s;
+    transition: background 0.2s, border-color 0.2s;
 }
 
 section:hover {
@@ -483,6 +483,48 @@ footer a {
     font-size: 1rem;
     color: #5a3a22;
     margin-top: 0.5rem;
+}
+ /* Gallery Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.gallery-card img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card img:hover {
+    transform: scale(1.04);
 }
 
 /*================================================
@@ -858,6 +900,20 @@ footer a {
     .gallery-card img {
         height: 230px;
     }
+
+    /* Make videos responsive on mobile and desktop */
+    video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+      video,
+     iframe {
+    box-sizing: border-box;
+}
 
 }
 }

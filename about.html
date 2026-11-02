@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Madibana Family Bakery</title>
+    <title>About Us | Madibana Family Bakery</title>
+    <meta name="description" content="Learn about Madibana Family Bakery,our family story,
+    passion for baking and commitment to freshly baked homemade products.">
     <!------External CSS------>
     <link rel = "stylesheet" href="css/style.css">
+    <!----------External Java Script------>
     <script src="js/script.js" defer></script>
     
 </head>
@@ -20,9 +23,9 @@
         <h1>Madibana Family Bakery</h1>
          <!--logo-->
          <img src="images/bakery logo.jpg" 
-         alt="Bakery Logo"
-          width="400" 
-          height="400">
+         alt=" Madibana Family Bakery Logo"
+          width="150" 
+          height="150">
         <!--slogan for the bakery-->
         <p><strong>Baked with love</strong></p>
 
@@ -33,7 +36,7 @@
         
             <!-- Navigation links to different pages of the website -->
             <a href="index.html">Home🏡</a>
-           <a href="about.html">About Us</a>
+           <a href="about.html" aria-current="page">About Us</a>
            <a href="product.html">Products</a>
            <a href="gallery.html">Gallery</a>
             <a href="enquiry.html">Enquiry</a>
@@ -42,8 +45,9 @@
 
      
 
+    </nav>
 
- </header>
+    </header>
   <hr>
     <!------------- Main ------------->
     <main>
@@ -239,12 +243,16 @@
             </ul>
 
         </section>
-     
-        <video controls width="300">    
-            <source src="/images/bakery .mp4.mp4" type="video/mp4">
+
+        <section>
+         <h2>Visit Our Bakery</h2>
+        <video controls width="400">    
+            <source src="images/bakery .mp4.mp4" type="video/mp4">
+            Your brower does not support the video element
             
         </video>
-    
+        
+        </section>
         </main>
 
            <!--END OF ABOUT SECTION-->
@@ -261,7 +269,8 @@
                 <strong>Madibana Family Bakery</strong> 
             </p>
 
-            <p>&copy; 2024 Madibana Family Bakery. All rights reserved.</p>
+            <p>&copy; <span id="year"></span>
+                 Madibana Family Bakery. All rights reserved.</p>
 
 
 
